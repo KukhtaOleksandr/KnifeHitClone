@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe0d20dc29b5554994cb2cc9ddd72ed, type: 3}
+  m_Name: Stage10
+  m_EditorClassIdentifier: 
+  _speed: 4
+  _knivesToSpawn: 17
+  _stage: 9
+  _rotationTypes: 000000000100000002000000
+  _stumpPrefabs:
+  - {fileID: 312430928393913308, guid: c1b89e27095163547b55f9b1f38a92df, type: 3}
+  - {fileID: 6708545567545690593, guid: 48406bb4806e2cd4e985c25532aba0a9, type: 3}
+  - {fileID: 5148654552950896673, guid: 275ac9c7fa46c124cb7a7bdb7c06e001, type: 3}
+  - {fileID: 2910386277481065258, guid: 30a80d9566041b840b59483d6d36b893, type: 3}

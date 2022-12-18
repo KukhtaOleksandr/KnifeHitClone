@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0892c5412e569a5439baea93dc14f9ea
+  m_SerializeEntries:
+  - m_GUID: 6777a290562745c4fbfe30f16389baea
+    m_Address: LoosePanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7c27adf6b0316584693f4d4c4933d90d
+    m_Address: WoodHit
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PlayModeSounds
+  - m_GUID: 7dc3bef8e124dcd4fbafe5c3ef55a26a
+    m_Address: KnifeHit
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PlayModeSounds
+  - m_GUID: 8dffcb81e1da0a04bb14fa5ebde75d37
+    m_Address: WoodBreak
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PlayModeSounds
+  - m_GUID: 781ed813446058c499f79145a30634c2
+    m_Address: GameLoose
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PlayModeSounds
+  - m_GUID: 8c17041d2f5bf4b46a4be4dd155cdc76
+    m_Address: SettingsPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: cc79d0f720226df40a65b621cb9ee0c0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 19156698c1bec3543895f70ab4cf39b4, type: 2}
+    - {fileID: 11400000, guid: ae77decc9e005a547b7f185c5e39e649, type: 2}
