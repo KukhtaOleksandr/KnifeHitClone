@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using Zenject;
+using TMPro;
+using UI.TextTypes;
 
 namespace UI.Factories.Global
 {
@@ -13,6 +15,10 @@ namespace UI.Factories.Global
         private Canvas _parent;
         [Inject]
         private DiContainer _container;
+        [Inject (Id = "bold")]
+        private TMP_FontAsset _boldFontAsset;
+        [Inject (Id = "regular")]
+        private TMP_FontAsset _regularFontAsset;
 
         private AsyncOperationHandle<GameObject> _handle;
         private GameObject _panel;
@@ -25,6 +31,20 @@ namespace UI.Factories.Global
                 GameObject result = _handle.Result;
 
                 _panel = _container.InstantiatePrefab(result, _parent.transform);
+                
+                ReassignFonts();
+            }
+        }
+
+        private void ReassignFonts()
+        {
+            foreach (BoldText text in _panel.GetComponentsInChildren<BoldText>())
+            {
+                text.gameObject.GetComponent<TextMeshProUGUI>().font = _boldFontAsset;
+            }
+            foreach (RegularText text in _panel.GetComponentsInChildren<RegularText>())
+            {
+                text.gameObject.GetComponent<TextMeshProUGUI>().font = _regularFontAsset;
             }
         }
 
@@ -32,7 +52,6 @@ namespace UI.Factories.Global
         {
             Addressables.Release(_handle);
             GameObject.Destroy(_panel);
-            
         }
     }
 }

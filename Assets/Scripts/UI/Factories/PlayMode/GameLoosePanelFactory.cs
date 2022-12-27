@@ -1,5 +1,7 @@
 using System.Threading.Tasks;
 using DG.Tweening;
+using TMPro;
+using UI.TextTypes;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -19,12 +21,14 @@ namespace UI.Factories
         private GameObject _gameLoosePanel;
         private RectTransform _panel;
         private AsyncOperationHandle<GameObject> handle;
+        private TMP_FontAsset _boldFontAsset;
 
-        public GameLoosePanelFactory(AssetReference gameLoosePanelReference, Canvas gameLoosePanelParent, DiContainer container)
+        public GameLoosePanelFactory(AssetReference gameLoosePanelReference, Canvas gameLoosePanelParent, DiContainer container, TMP_FontAsset boldFontAsset)
         {
             _gameLoosePanelReference = gameLoosePanelReference;
             _gameLoosePanelParent = gameLoosePanelParent;
             _container = container;
+            _boldFontAsset = boldFontAsset;
         }
 
         public async Task CreatePanel()
@@ -37,7 +41,16 @@ namespace UI.Factories
 
                 _panel = _container.InstantiatePrefab(result, _gameLoosePanelParent.transform).GetComponent<RectTransform>();
 
+                ReassignFonts();
                 AnimatePanelCreation();
+            }
+        }
+
+        private void ReassignFonts()
+        {
+            foreach (BoldText text in _panel.GetComponentsInChildren<BoldText>())
+            {
+                text.gameObject.GetComponent<TextMeshProUGUI>().font = _boldFontAsset;
             }
         }
 

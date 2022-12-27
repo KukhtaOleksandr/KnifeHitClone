@@ -656,6 +656,8 @@ MonoBehaviour:
   _settingButtonPrefab: {fileID: 2188207706269151263, guid: b37dcc11dc095b94589f0ad06beff6b5, type: 3}
   _playButtonPrefab: {fileID: 6934174907420924377, guid: 88d8aeb934a6c1b44a98f141535c6dff, type: 3}
   _stageScorePrefab: {fileID: 378939455213796980, guid: 4d848ed365eb03448be5c666b3dc3595, type: 3}
+  _boldFont: {fileID: 11400000, guid: 46dca8cc63ab6f344b45068a08bf3c0f, type: 2}
+  _regularFont: {fileID: 11400000, guid: 864be870158d19346ac0ddabd8010c09, type: 2}
 --- !u!114 &1401335329
 MonoBehaviour:
   m_ObjectHideFlags: 0

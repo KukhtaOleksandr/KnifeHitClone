@@ -851,6 +851,8 @@ MonoBehaviour:
   _mainCanvas: {fileID: 1294590841}
   _stageTextPrefab: {fileID: 3766985925317772599, guid: 3ef886dfb7ad96340a86dd20f155ed12, type: 3}
   _scoreUIPrefab: {fileID: 548013530361554019, guid: 09be63d9d4e7c4e47a0e0212d65c4a30, type: 3}
+  _boldFont: {fileID: 11400000, guid: 46dca8cc63ab6f344b45068a08bf3c0f, type: 2}
+  _regularFont: {fileID: 11400000, guid: 864be870158d19346ac0ddabd8010c09, type: 2}
 --- !u!1 &1294590838
 GameObject:
   m_ObjectHideFlags: 0
